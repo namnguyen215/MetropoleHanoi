@@ -1,0 +1,201 @@
+/*Small map + img*/
+.smallmap h1 h2 h3 h4 {
+    font-family: serif, 'legendtext';
+    color: black;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.smallmap h3{
+    display: block;
+    margin-block-start: 1cm;
+    margin-block-end: 1cm;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+}
+ .smallmap {
+ display: flex;
+}
+ .column-left{
+    float: left;
+    width: 70%;
+    padding-right: 80px;
+}
+.column-right {
+  float: right;
+  width: 30%;
+
+}
+.quote{
+    float: left;
+    position: relative;
+}
+#intro .column-left,  .column-right {
+    float: inherit;
+    width: 100%;
+    padding: 0 5%;
+}
+.quote p:after {
+    content: '”';
+    position: absolute;
+    right: -7px;
+    bottom: 10px;
+    font-size: 14px;
+    font-family: 'Gotham', sans-serif;
+    line-height: 0;
+    margin-left: 8px;
+    padding-top: 20px;
+}
+#intro a  {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #8d7535;
+    float: right;
+    right: 25px;
+    position: sticky;
+}
+/* Singular and inspiring*/
+#highlighted {
+    max-width: 1000px;
+    margin: auto;
+    clear: both;
+    float: inherit;
+}
+#highlighted ul {
+    list-style-type: none;
+    display: flex;
+    padding-top: 40px;
+    
+}
+.highlighted-list ul {
+   margin: 0 0;
+   padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+}
+#highlighted ul li:first-child{
+    overflow: visible;
+}
+#highlighted ul li{
+    height: 500px;
+    float: inherit;
+    position: relative;
+    margin-bottom: 30px;
+    float: left;
+    margin-right: 50px;
+}
+.highlighted-list li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+
+}
+.highlighted-list h3 {
+    font-family: 'legendtext', serif;
+    color: black;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#highlighted h3 {
+    margin-top: 30px;
+}
+.highlighted-list a{
+    text-decoration: none;
+    color: #8d7535;
+    transition: color .4s ease-in-out;
+    outline: 0;
+}
+#highlighted li div {
+    position: relative;
+    left: 0;
+    
+}
+.highlighted-list div.w-resp {
+    overflow: hidden;
+}
+
+.highlighted-list ul li > a > div > strong {
+    font-family: 'Times New Roman', serif;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: normal;
+    clear: both;
+    width: 100%;
+    color: #000;
+    text-transform: uppercase;
+    margin: 20px 0;
+    margin-bottom: 0;
+}
+#highlighted li div > p {
+    margin: 10px 0 0 0;
+    text-align: left;
+    line-height: 20px;
+}
+#highlighted div > p {
+    font-family: 'Gotham';
+    font-size: 16px;
+}
+.highlighted-list p{
+    color: black;
+    float: none;
+}
+
+/*Imange and quote*/
+#image-quote {
+    padding-left: 0;
+    padding-right: 0;
+}
+#image-quote .image-fullwidth {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+  
+}
+#image-quote .image-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+}
+#image-quote .text-section {
+    position: absolute;
+}
+#image-quote .text-section {
+    top: 30%;
+    left: 10%;
+    width: 80%;
+}
+#image-quote .text-section p{
+    color: white;
+    text-align: center;
+    float: none;
+    font-family: 'Gotham';
+    border-radius: initial;
+    padding-top: 35px;
+}
+
+#image-quote .text-section p {
+    font-size: 40px;
+    line-height: 40px;
+}
+#image-quote .text-section span {
+    float: right;
+    font-family: 'Gotham';
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    top: 40px;
+}
