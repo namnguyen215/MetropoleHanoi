@@ -691,6 +691,15 @@ footer .seobar {
     margin-top: 30px;
 }
 
+#highlighted .image-title {
+    font-family: 'Times New Roman', serif;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: normal;
+    color: #000;
+    text-transform: uppercase;
+}
+
 .highlighted-list a {
     text-decoration: none;
     color: #8d7535;
