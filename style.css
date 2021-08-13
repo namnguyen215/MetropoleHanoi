@@ -126,6 +126,85 @@ body {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.book-now {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #fff;
+    padding: 11px 20px;
+    font-size: 14px;
+    background-color: #8d7535;
+}
+
+.book-now:hover {
+    color: #fff;
+}
+
+.modal .row {
+    height: auto;
+    color: #000;
+}
+
+.modal-header {
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.modal-header .hotel-name {
+    color: #000;
+    font-size: 24px;
+}
+
+.modal-header .subtitle {
+    color: #8d7535;
+    font-style: italic;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.modal-header button {
+    position: absolute;
+    margin: 0;
+    top: 8px;
+    right: 8px;
+}
+
+.modal-footer .row {
+    width: 100%;
+}
+
+.modal-footer .selection {
+    width: 80px;
+    float: left;
+    margin-right: 3%;
+}
+
+.modal-footer select {
+    width: 100%;
+    height: 28px;
+}
+
+.modal-footer label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px !important;
+    color: #000;
+}
+
+.modal-footer input {
+    width: 100%;
+    height: 28px;
+}
+
+
+/* .modal-footer .book-now {
+    background-color: #8d7535;
+    padding: 10px 20px;
+    font-family: 'Times New Roman', serif;
+}
+
+.modal-footer .book-now:hover {
+    color: #fff;
+} */
+
 .offcanvas-body a {
     text-decoration: none;
 }
@@ -479,7 +558,7 @@ footer .seobar {
 /*Small map + img*/
 
 .smallmap h1 h2 h3 h4 {
-    font-family: serif, 'legendtext';
+    font-family: 'Times New Roman', Times, serif;
     color: black;
     font-size: 36px;
     line-height: 36px;
@@ -488,15 +567,20 @@ footer .seobar {
 
 .smallmap h3 {
     display: block;
-    margin-block-start: 1cm;
-    margin-block-end: 1cm;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .smallmap {
     display: flex;
+    justify-content: center;
+    padding: 10px 12%;
+}
+
+.smallmap .quote {
+    margin-top: 36px;
 }
 
 .column-left {
@@ -515,23 +599,16 @@ footer .seobar {
     position: relative;
 }
 
-#intro .column-left,
-.column-right {
-    float: inherit;
-    width: 100%;
-    padding: 0 5%;
+.quote p {
+    font-family: 'GothamPro', sans-serif;
+    font-size: 14px;
 }
 
-.quote p:after {
-    content: '”';
-    position: absolute;
-    right: -7px;
-    bottom: 10px;
+.column-left .signature {
+    font-family: 'Times New Roman', serif;
+    color: #444444;
+    line-height: 44px;
     font-size: 14px;
-    font-family: 'Gotham', sans-serif;
-    line-height: 0;
-    margin-left: 8px;
-    padding-top: 20px;
 }
 
 #intro a {
@@ -542,6 +619,16 @@ footer .seobar {
     float: right;
     right: 25px;
     position: sticky;
+    text-decoration: none;
+}
+
+.column-right .location_map {
+    border: 1px solid #8d7535;
+    padding: 4px;
+}
+
+.column-right .location_link {
+    padding-top: 12px;
 }
 
 

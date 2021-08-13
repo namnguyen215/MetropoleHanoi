@@ -8,8 +8,10 @@
     <title>Luxury Five Star Hotel in Hanoi | Sofitel Legend Metropole Hanoi</title>
     <link rel="icon" type="image/png" href="https://www.sofitel-legend-metropole-hanoi.com/wp-content/themes/sofitel-legend-template/images/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calenderstyle.css">
 </head>
 
 <body>
@@ -206,7 +208,117 @@
                                 </li>
                             </ul>
                         </div>
-                        <a class="bookRoom"><i>Book a room</i></a>
+                        <a href="#" class="book-now" data-bs-toggle="modal" data-bs-target="#exampleModal"><i>Book a room</i></a>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="hotel-name">SOFITEL LEGEND METROPOLE HANOI</div>
+                                        <div class="subtitle">Book your stay</div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <section class="ftco-section">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="calendar-section">
+                                                            <div class="row no-gutters">
+                                                                <div class="col-md-6">
+
+                                                                    <div class="calendar calendar-first" id="calendar_first">
+                                                                        <div class="calendar_header">
+                                                                            <button class="switch-month switch-left">
+                                                              <i class="fa fa-chevron-left"></i>
+                                                            </button>
+                                                                            <h2></h2>
+                                                                            <button class="switch-month switch-right">
+                                                              <i class="fa fa-chevron-right"></i>
+                                                            </button>
+                                                                        </div>
+                                                                        <div class="calendar_weekdays"></div>
+                                                                        <div class="calendar_content"></div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="col-md-6">
+
+                                                                    <div class="calendar calendar-second" id="calendar_second">
+                                                                        <div class="calendar_header">
+                                                                            <button class="switch-month switch-left">
+                                                              <i class="fa fa-chevron-left"></i>
+                                                            </button>
+                                                                            <h2></h2>
+                                                                            <button class="switch-month switch-right">
+                                                              <i class="fa fa-chevron-right"></i>
+                                                            </button>
+                                                                        </div>
+                                                                        <div class="calendar_weekdays"></div>
+                                                                        <div class="calendar_content"></div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <!-- End Row -->
+
+                                                        </div>
+                                                        <!-- End Calendar -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="row room-select">
+                                            <form action="" method="post">
+                                                <div class="selection">
+                                                    <label for="rooms">Rooms</label>
+                                                    <select name="rooms" id="rooms">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="selection">
+                                                    <label for="adults">Adults</label>
+                                                    <select name="adults" id="adults">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </div>
+                                                <div class="selection">
+                                                    <label for="children">Children</label>
+                                                    <select name="children" id="children">
+                                                        <option value="0">0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="row">
+                                            <form action="" method="post">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="loyalty">Loyalty program</label>
+                                                        <input type="text" name="loyalty">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="code">Preferential code</label>
+                                                        <input type="text" name="code">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <a href="#" class="book-now" data-bs-toggle="modal" data-bs-target="#exampleModal"><i>BookNow</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -254,12 +366,11 @@
             <div class="smallmap">
                 <div class="column-left">
                     <h3>Sofitel Legend Metropole Hanoi</h3>
-                    <hr>
-                    <div class="quote high ">
-                        <p>Hanoi is a magical and charming city. I hope you will find that the character, history and romance of the Sofitel Legend Metropole Hanoi may add a little extra special something to your journey here. Savour our French art de vivre
-                            blended with elegant Vietnamese touches and please enjoy this wonderful place.</p>
+                    <div class="quote">
+                        <p>"Hanoi is a magical and charming city. I hope you will find that the character, history and romance of the Sofitel Legend Metropole Hanoi may add a little extra special something to your journey here. Savour our French art de vivre
+                            blended with elegant Vietnamese touches and please enjoy this wonderful place."</p>
                     </div>
-                    <h4 class="signature">The General Manager</h4>
+                    <h4 class="signature">THE GENERAL MANAGER</h4>
                     <p><img width="150" height="28" src="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/95/2018/11/15080339/WH-03-4.png" alt="Director Manager's Signature"></p>
                 </div>
                 <div class="column-right">
@@ -267,7 +378,7 @@
                         <img alt="google_map" src="https://maps.googleapis.com/maps/api/staticmap?center=21.0254649,105.8560628&language=en&zoom=15&size=330x250&&style=feature:landscape%7Csaturation:-100%7Clightness:65%7Cvisibility:on&style=feature:poi%7Celement:all%7Cvisibility:off&style=feature:road.highway%7Csaturation:-100%7Cvisibility:simplified&style=feature:road.arterial%7Celement:labels.icon%7Cvisibility:off&style=feature:road.local%7Csaturation:-100%7Clightness:40%7Cvisibility:on&style=feature:transit%7Celement:all%7Cvisibility:off&style=feature:administrative.province%7Cvisibility:off&style=feature:water%7Celement:labels%7Cvisibility:on%7Clightness:-25%7Csaturation:-100&style=feature:water%7Celement:geometry%7Chue:0xffff00%7Clightness:-25%7Csaturation:-97&markers=icon:https://www.sofitel-legend-metropole-hanoi.com/wp-content/themes/sofitel-legend-template/images/mini-pin.png%7C21.0254649,105.8560628&key=AIzaSyAcZ4AFnZVgcQ27sNxbkz1jtpdqu2iyXcQ"
                             width="330" height="250">
                     </a>
-                    <a class="location_link" href="https://www.sofitel-legend-metropole-hanoi.com/location/">See the Map</a>
+                    <a class="location_link" href="https://www.sofitel-legend-metropole-hanoi.com/location/">See the Map ></a>
                 </div>
             </div>
         </div>
@@ -485,7 +596,10 @@
 
     </div>
 
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
